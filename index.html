@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <title>EmTask MVP</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <h1>EmTask MVP</h1>
 
-  <input id="taskInput" placeholder="Add a task…" />
-  <select id="prioritySelect">
-    <option value="🔥">🔥 High</option>
-    <option value="⚡">⚡ Medium</option>
-    <option value="💤">💤 Low</option>
-  </select>
-  <button id="addTaskBtn">Add</button>
+  <!-- Task Bar -->
+  <div class="task-bar">
+    <input
+      id="taskInput"
+      type="text"
+      placeholder="Add a task..."
+    />
 
+    <select id="prioritySelect">
+      <option value="🔥">🔥 High</option>
+      <option value="⚡">⚡ Medium</option>
+      <option value="💤">💤 Low</option>
+    </select>
+
+    <button id="addTaskBtn">Add</button>
+  </div>
+
+  <!-- Task List -->
   <ul id="taskList"></ul>
 
+  <!-- Logic -->
   <script src="app.js"></script>
+
 </body>
 </html>
+
 
